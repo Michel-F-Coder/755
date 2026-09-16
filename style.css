@@ -9,7 +9,7 @@ form
 {
     width: 500px;
     background-color: #f80808;
-    padding: 20px;
+    padding: 30px;
     margin: 50px auto;
     border: 1px solid #14b621;
     border-radius: 10px;
@@ -19,6 +19,7 @@ label
 {
     font-weight: bold;
 }
+
 input
 {
     width: 100%;
