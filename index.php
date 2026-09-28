@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danilo Guido / Portfólio</title>
+    <title>Michel Fernando / Portfólio</title>
     <link rel="stylesheet" href="portfolio.css">
 </head>
 
