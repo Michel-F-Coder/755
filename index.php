@@ -1,3 +1,12 @@
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -32,7 +41,7 @@
         <section id="inicio" class="inicio">
             <div class="inicio-conteudo">
                 <p class="apresentacao">Olá, eu sou</p>
-                <h1>Danilo Guido</h1>
+                <h1>Michel Fernando</h1>
                 <h2>Desenvolvedor de software.</h2>
                 <p class="descricao">
                     Estou iniciando na programação.
@@ -180,14 +189,13 @@
                 <h2>Contato</h2>
             </div>
             <div class="contato-links">
-                <a href="mailto:bus22b@gmail.com">Email</a>
+                <a href="mailto:bust22b@gmail.com">Email</a>
                 <a href="https://github.com/Michel-F-Coder">Github</a>
-                <a href=>LinkedIn</a>
             </div>
         </section>
         <footer class="footer">
         <p>
-            Desenvolvido por <a href="https://michel755.devlook.xyz">Michel F</a>
+            Desenvolvido por <a href="https://michel755.devlook.xyz">Michel Fernando</a>
         </p>
         <p>
             HTML + CSS
