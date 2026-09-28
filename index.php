@@ -156,17 +156,17 @@
                          02
                      </div>
 
-                     <h3>Sistema 2</h3>
+                     <h3>Sistema Verificador de idade</h3>
                      <p>
-                         Descrição do sistema 2
+                           Verificador de idade
                      </p>
 
                      <div class="tecnologias">
                          <span>HTML</span>
                          <span>CSS</span>
-                         <!--span>PHP</span-->
+                         <span>PHP</span>
                      </div>
-                     <a href="cadastro.html">Ver projetos</a>
+                     <a href="idade.php">Ver projetos</a>
                  </div>
 
                  <!-- PROJETO 3 -->
