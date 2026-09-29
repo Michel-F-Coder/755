@@ -44,7 +44,7 @@ else {
             <button type="submit"> Cadastrar</button>
 
         </form>
-        <p> <? $resultado ?></p>
+        <p> <?= $resultado ?></p>
     </section>
 </main>
 
