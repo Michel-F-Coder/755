@@ -1,23 +1,4 @@
- <?php
 
-    $nome = "Michel";
-    $idade = 25;
-    $altura = 1.74;
-    $matricula_ativ = true;
-    $resultado = "";
-
-    if ($idade >= 18) {
-        $resultado = "De maior";
-    } else {
-        $resultado = "De menor";
-    }
-        
-
-
-
-
-
-    ?>
  <!DOCTYPE html>
  <html lang="pt-BR">
 
