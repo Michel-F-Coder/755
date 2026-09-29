@@ -1,6 +1,7 @@
 <?php
 
-$idade = 25;
+$nome = $_POST["nome"];
+$idade = $_POST["idade"];
 $resultado;
 
 if($idade <= 18) {
@@ -34,12 +35,12 @@ else {
 <main>
     <section class="Cadastro">
         <h1>cadastro</h1>
-        <form>
+        <form method="POST">
             <label>Nome:</label>
-            <input type="text">
+            <input type="text" class ="nome" id ="nome" name = "nome">
 
             <label>IDADE:</label>
-            <input type="number">
+            <input type="number" class = "idade" id = "idade" name = "idade">
             <button type="submit"> Cadastrar</button>
 
         </form>
@@ -48,3 +49,4 @@ else {
 
 </body>
 </html>
+
