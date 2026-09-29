@@ -33,7 +33,7 @@ else {
     <section class="Cadastro">
         <h1>cadastro</h1>
         <form method="POST">
-            <label>Nome:</label>
+            <label class = "cor_do_nome">Nome:</label>
             <input type="text" class ="nome" id ="nome" name = "nome">
 
             <label>IDADE:</label>

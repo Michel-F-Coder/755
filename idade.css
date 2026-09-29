@@ -1,3 +1,8 @@
 .nome {
     color: blue;
 }
+
+.cor_do_nome {
+    color: aqua;
+    background-color: brown;
+}
