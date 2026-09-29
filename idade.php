@@ -4,7 +4,7 @@ $nome = $_POST["nome"];
 $idade = $_POST["idade"];
 $resultado;
 
-if($idade <= 18) {
+if($idade >= 18) {
     $resultado = "De maior";
 }
 else {
