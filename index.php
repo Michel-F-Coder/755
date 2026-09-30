@@ -116,9 +116,9 @@
                          01
                      </div>
 
-                     <h3>Sistema de cadastro</h3>
+                     <h3>Sistema Verificador de idade GET</h3>
                      <p>
-                         Descrição do sistema de cadastro
+                         Verificador de idade
                      </p>
 
                      <div class="tecnologias">
@@ -126,7 +126,7 @@
                          <span>CSS</span>
                          <!--span>PHP</span-->
                      </div>
-                     <a href="cadastro.html">Ver projetos</a>
+                     <a href="idade-get.php">Ver projetos</a>
                  </div>
 
                  <!-- PROJETO 2-->
@@ -137,7 +137,7 @@
                          02
                      </div>
 
-                     <h3>Sistema Verificador de idade</h3>
+                     <h3>Sistema Verificador de idade POST</h3>
                      <p>
                            Verificador de idade
                      </p>
@@ -147,7 +147,7 @@
                          <span>CSS</span>
                          <span>PHP</span>
                      </div>
-                     <a href="idade.php">Ver projetos</a>
+                     <a href="idade-post.php">Ver projetos</a>
                  </div>
 
                  <!-- PROJETO 3 -->
