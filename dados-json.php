@@ -65,10 +65,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $alunos,
         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
     );
-
+    
     // SALVAR NO ARQUIVO JSON
-    file_put_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
-}
+}    file_put_contents(__DIR__ . "/dados/intro.json", $jsonAtualizado);
+
 
 // LEITURA DOS DADOS PARA EXIBIÇÃO
 
