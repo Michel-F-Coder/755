@@ -87,27 +87,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2> <?= $produto["nome"] ?> </h2>
         <p> Idade: <?= $produto["idade"]?> </p>
 
-        <!-- PORTUGUES -->
-        <h2>PORTUGUÊS</h2>
-        <p>Prova 1: <?= $aluno["notas"]["portugues"]["prova1"] ?></p>
-        <p>Prova 2: <?= $aluno["notas"]["portugues"]["prova2"] ?></p>
-        <p>Prova 3: <?= $aluno["notas"]["portugues"]["prova3"] ?></p>
+        <h2>Produtos</h2>
+        <p>Produto 1: <?= $produto["nome"]["categoria"]
+            ["marca"]["preco"]["quantidade"] ?></p>
+        <p>Produto 2: <?= $produto["nome"]["categoria"]
+            ["marca"]["preco"]["quantidade"] ?></p>
+        <p>Prova 3: <?= $produto["nome"]["categoria"]
+            ["marca"]["preco"]["quantidade"] ?></p>
 
+        <br>
 
+        <h2>Fabricante</h2> 
 
-
-
+        <p>Pais do fabricante:<?= $produto["p_info"]["nome_fabricante"]?></p>
+        <p>Nome do fabricante:<?= $produto["p_info"]["pais_fabricante"] ?></p>
+             
 
     <?php } ?>
-
-
-
-
-
-
-
-
-
 
 
 </body>

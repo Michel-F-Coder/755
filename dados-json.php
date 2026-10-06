@@ -143,7 +143,6 @@ $alunos = json_decode($conteudoJson, true);
         <p>Prova 2: <?= $aluno["notas"]["matematica"]["prova2"] ?></p>
         <p>Prova 3: <?= $aluno["notas"]["matematica"]["prova3"] ?></p>
 
-        <!-- HISTÓRIA -->
         <h2>HISTÓRIA</h2>
         <p>Prova 1: <?= $aluno["notas"]["historia"]["prova1"] ?></p>
         <p>Prova 2: <?= $aluno["notas"]["historia"]["prova2"] ?></p>
