@@ -1,46 +1,46 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+// if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $nome = $_POST["nome"];
-    $categoria = $_POST["categoria"];
-    $marca = $_POST["marca"];
-    $preco = $_POST["preco"];
-    $quantidade = $_POST["quantidade"];
+//     $nome = $_POST["nome"];
+//     $categoria = $_POST["categoria"];
+//     $marca = $_POST["marca"];
+//     $preco = $_POST["preco"];
+//     $quantidade = $_POST["quantidade"];
 
-    $nome_fab = $_POST["nome do fabricante"];
-    $pais_fab = $_POST["pais do fabricante"];
+//     $nome_fab = $_POST["nome do fabricante"];
+//     $pais_fab = $_POST["pais do fabricante"];
 
-    $novoProduto = [
+//     $novoProduto = [
 
-        "nome" => $nome,
-        "categoria" => $categoria,
-        "marca" => $marca,
-        "preco" => $preco,
-        "quantidade" => $quantidade,
+//         "nome" => $nome,
+//         "categoria" => $categoria,
+//         "marca" => $marca,
+//         "preco" => $preco,
+//         "quantidade" => $quantidade,
 
-        "p_info" => [
-            "nome_fabricante" => $nome_fab,
-            "pais_fabricante" => $pais_fab,
-        ]
-    ];
+//         "p_info" => [
+//             "nome_fabricante" => $nome_fab,
+//             "pais_fabricante" => $pais_fab,
+//         ]
+//     ];
 
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
+//     $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
 
-    $produtos = json_decode($conteudoJson, true);
+//     $produtos = json_decode($conteudoJson, true);
 
-    $produtos[] = $novoProduto;
+//     $produtos[] = $novoProduto;
 
-    $jsonAtualizado = json_encode(
-        $produtos,
-        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
-    );
+//     $jsonAtualizado = json_encode(
+//         $produtos,
+//         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+//     );
 
-    file_put_contents(__DIR__ . "/dados/produtos.json", $jsonAtualizado);
+//     file_put_contents(__DIR__ . "/dados/produtos.json", $jsonAtualizado);
 
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
+//     $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
 
-    $produtos = json_decode($conteudoJson, true);
-}
+//     $produtos = json_decode($conteudoJson, true);
+// }
 ?>
 
 
@@ -83,27 +83,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <h1>PRODUTOS CADASTRADOS</h1>
 
-    <?php foreach ($produtos as $produto) { ?>
-        <h2> <?= $produto["nome"] ?> </h2>
-        <p> Idade: <?= $produto["idade"]?> </p>
+    <!--?php foreach ($produtos as $produto) { ?>
+        <h2> <.?= $produto["nome"] ?> </h2>
+        <p> Idade: <.?= $produto["idade"]?> </p>
 
         <h2>Produtos</h2>
-        <p>Produto 1: <?= $produto["nome"]["categoria"]
+        <p>Produto 1: <.?= $produto["nome"]["categoria"]
             ["marca"]["preco"]["quantidade"] ?></p>
-        <p>Produto 2: <?= $produto["nome"]["categoria"]
+        <p>Produto 2: <.?= $produto["nome"]["categoria"]
             ["marca"]["preco"]["quantidade"] ?></p>
-        <p>Prova 3: <?= $produto["nome"]["categoria"]
+        <p>Prova 3: <.?= $produto["nome"]["categoria"]
             ["marca"]["preco"]["quantidade"] ?></p>
 
         <br>
 
         <h2>Fabricante</h2> 
 
-        <p>Pais do fabricante:<?= $produto["p_info"]["nome_fabricante"]?></p>
-        <p>Nome do fabricante:<?= $produto["p_info"]["pais_fabricante"] ?></p>
+        <p>Pais do fabricante:<.?= $produto["p_info"]["nome_fabricante"]?></p>
+        <p>Nome do fabricante:<.?= $produto["p_info"]["pais_fabricante"] ?></p>
              
 
-    <?php } ?>
 
 
 </body>
