@@ -1,5 +1,5 @@
 www.w3schools.com/cssref/
 
-login vss - ssh michel755@193.111.116.99 -  senha 755!@#
+login vps - ssh michel755@193.111.116.99 -  senha 755!@#
 
 http://michel755.devlook.xyz/
