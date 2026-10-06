@@ -1,48 +1,59 @@
 <?php
-// if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-//     $nome = $_POST["nome"];
-//     $categoria = $_POST["categoria"];
-//     $marca = $_POST["marca"];
-//     $preco = $_POST["preco"];
-//     $quantidade = $_POST["quantidade"];
+$arquivo = __DIR__ . "/dados/produtos.json";
 
-//     $nome_fab = $_POST["nome do fabricante"];
-//     $pais_fab = $_POST["pais do fabricante"];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-//     $novoProduto = [
+    $nome = $_POST["nome"];
+    $categoria = $_POST["categoria"];
+    $marca = $_POST["marca"];
+    $preco = $_POST["preco"];
+    $quantidade = $_POST["quantidade"];
 
-//         "nome" => $nome,
-//         "categoria" => $categoria,
-//         "marca" => $marca,
-//         "preco" => $preco,
-//         "quantidade" => $quantidade,
+    $nome_fab = $_POST["nome_fabricante"];
+    $pais_fab = $_POST["pais_fabricante"];
 
-//         "p_info" => [
-//             "nome_fabricante" => $nome_fab,
-//             "pais_fabricante" => $pais_fab,
-//         ]
-//     ];
+    $novoProduto = [
+        "nome" => $nome,
+        "categoria" => $categoria,
+        "marca" => $marca,
+        "preco" => $preco,
+        "quantidade" => $quantidade,
 
-//     $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
+        "p_info" => [
+            "nome_fabricante" => $nome_fab,
+            "pais_fabricante" => $pais_fab
+        ]
+    ];
 
-//     $produtos = json_decode($conteudoJson, true);
+    $conteudoJson = file_get_contents($arquivo);
 
-//     $produtos[] = $novoProduto;
+    $produtos = json_decode($conteudoJson, true);
 
-//     $jsonAtualizado = json_encode(
-//         $produtos,
-//         JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
-//     );
+    if (!is_array($produtos)) {
+        $produtos = [];
+    }
 
-//     file_put_contents(__DIR__ . "/dados/produtos.json", $jsonAtualizado);
+    $produtos[] = $novoProduto;
 
-//     $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
+    $jsonAtualizado = json_encode(
+        $produtos,
+        JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE
+    );
 
-//     $produtos = json_decode($conteudoJson, true);
-// }
+    file_put_contents($arquivo, $jsonAtualizado);
+    
+} else {
+
+    $conteudoJson = file_get_contents($arquivo);
+    $produtos = json_decode($conteudoJson, true);
+
+    if (!is_array($produtos)) {
+        $produtos = [];
+    }
+}
+
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -54,56 +65,74 @@
 </head>
 
 <body>
+
     <h1>CADASTRO DE PRODUTOS</h1>
+
     <form method="POST">
+
         <label>Nome:</label>
         <input type="text" name="nome" required>
         <br><br>
-        <label>categoria:</label>
+
+        <label>Categoria:</label>
         <input type="text" name="categoria" required>
-        <br>
-        <label>marca:</label>
+        <br><br>
+
+        <label>Marca:</label>
         <input type="text" name="marca" required>
-        <br>
-        <label>preco:</label>
+        <br><br>
+
+        <label>Preço:</label>
         <input type="number" name="preco" required>
-        <br>
-        <label>quantidade:</label>
+        <br><br>
+
+        <label>Quantidade:</label>
         <input type="number" name="quantidade" required>
-        <br>
+        <br><br>
+
         <h2>Dados do Fabricante</h2>
+
         <label>Nome:</label>
-        <input type="text" name="nome do fabricante" required>
-        <br>
-        <label>Pais fabricante:</label>
-        <input type="text" name="pais do fabricante" required>
-        <br>
+        <input type="text" name="nome_fabricante" required>
+        <br><br>
+
+        <label>País fabricante:</label>
+        <input type="text" name="pais_fabricante" required>
+        <br><br>
+
         <button type="submit">Enviar</button>
+
     </form>
 
     <h1>PRODUTOS CADASTRADOS</h1>
 
-    <!--?php foreach ($produtos as $produto) { ?>
-        <h2> <.?= $produto["nome"] ?> </h2>
-        <p> Idade: <.?= $produto["idade"]?> </p>
+    <?php foreach ($produtos as $produto) { ?>
 
-        <h2>Produtos</h2>
-        <p>Produto 1: <.?= $produto["nome"]["categoria"]
-            ["marca"]["preco"]["quantidade"] ?></p>
-        <p>Produto 2: <.?= $produto["nome"]["categoria"]
-            ["marca"]["preco"]["quantidade"] ?></p>
-        <p>Prova 3: <.?= $produto["nome"]["categoria"]
-            ["marca"]["preco"]["quantidade"] ?></p>
+        <h2><?= $produto["nome"] ?></h2>
 
-        <br>
+        <p>Categoria: <?= $produto["categoria"] ?></p>
 
-        <h2>Fabricante</h2> 
+        <p>Marca: <?= $produto["marca"] ?></p>
 
-        <p>Pais do fabricante:<.?= $produto["p_info"]["nome_fabricante"]?></p>
-        <p>Nome do fabricante:<.?= $produto["p_info"]["pais_fabricante"] ?></p>
-             
+        <p>Preço: R$ <?= $produto["preco"] ?></p>
 
+        <p>Quantidade: <?= $produto["quantidade"] ?></p>
 
+        <h2>Fabricante</h2>
+
+        <p>
+            Nome do fabricante:
+            <?= $produto["p_info"]["nome_fabricante"] ?>
+        </p>
+
+        <p>
+            País do fabricante:
+            <?= $produto["p_info"]["pais_fabricante"] ?>
+        </p>
+
+        <hr>
+
+    <?php } ?>
 
 </body>
 
