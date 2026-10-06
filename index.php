@@ -168,7 +168,7 @@
                          <span>CSS</span>
                          <span>PHP</span>
                      </div>
-                     <a href="cadastro-produtos.php">Ver projetos</a>
+                     <a href="dados-json.php">Ver projetos</a>
                  </div>
 
              </div>
