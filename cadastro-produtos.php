@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     file_put_contents(__DIR__ . "/dados/produtos.json", $jsonAtualizado);
 
-    $conteudoJson = file_get_contents(__DIR__ . "/dados/intro.json");
+    $conteudoJson = file_get_contents(__DIR__ . "/dados/produtos.json");
 
     $produtos = json_decode($conteudoJson, true);
 }
@@ -85,7 +85,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <?php foreach ($produtos as $produto) { ?>
         <h2> <?= $produto["nome"] ?> </h2>
-        <p> Idade: <?= $produto["idade"] ?> </p>
+        <p> Idade: <?= $produto["idade"]?> </p>
 
         <!-- PORTUGUES -->
         <h2>PORTUGUÊS</h2>
