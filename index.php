@@ -126,7 +126,7 @@
                          <span>CSS</span>
                          <span>PHP</span>
                      </div>
-                     <a href="cadastro-produtos.php">Ver projetos</a>
+                     <a href="atividades/cadastro-produtos.php">Ver projetos</a>
                  </div>
 
                  <!-- PROJETO 2-->
@@ -147,7 +147,7 @@
                          <span>CSS</span>
                          <span>PHP</span>
                      </div>
-                     <a href="idade-post.php">Ver projetos</a>
+                     <a href="atividades/idade-post.php">Ver projetos</a>
                  </div>
 
                  <!-- PROJETO 3 -->
