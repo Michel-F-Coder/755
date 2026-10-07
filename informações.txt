@@ -5,6 +5,11 @@ login vps - ssh michel755@193.111.116.99 -  senha 755!@#
 http://michel755.devlook.xyz/
 
 
+========== COMANDOS =========
+
+cd -> entra na pasta
+cd .. -> volta pasta
+
 ========== CRUD ==========
 
 CREATE -> CRIAR
@@ -19,4 +24,6 @@ PHP:
 
 file_put_contents -> CREATE
 file_get_contents -> READ
+
+
 
