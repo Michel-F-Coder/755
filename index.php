@@ -1,199 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
 
- <!DOCTYPE html>
- <html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michel Fernando / Portfólio</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+</head>
 
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Michel Fernando / Portfólio</title>
-     <link rel="stylesheet" href="css/portfolio.css">
- </head>
+<body>
+    <!-- MENU -->
 
- <body>
-     <!-- MENU -->
+    <header>
+        <div class="logo">
+            <!<h2>Michel <span>Fernando</span></h2>
+        </div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-     <header>
-         <div class="logo">
-             <!<h2>Michel <span>Fernando</span></h2>
-         </div>
-         <nav>
-             <a href="#inicio">Início</a>
-             <a href="#sobre">Sobre</a>
-             <a href="#projetos">Projetos</a>
-             <a href="#contato">Contato</a>
-         </nav>
-     </header>
+    <!-- CONTEÚDO PRINCIPAL -->
 
-     <!-- CONTEÚDO PRINCIPAL -->
+    <main>
 
-     <main>
+        <!-- SESSÃO DE INÍCIO -->
 
-         <!-- SESSÃO DE INÍCIO -->
+        <section id="inicio" class="inicio">
+            <div class="inicio-conteudo">
+                <p class="apresentacao">Olá, eu sou</p>
+                <h1>Michel Fernando</h1>
+                <h2>Desenvolvedor de software.</h2>
+                <p class="descricao">
+                    Estou iniciando na programação.
+                </p>
+                <div class="botoes">
+                    <a href="#projetos" class="botao">Ver projetos</a>
+                    <a href="#contato" class="botao botao-secundario">Entrar em contato</a>
+                </div>
+            </div>
+        </section>
 
-         <section id="inicio" class="inicio">
-             <div class="inicio-conteudo">
-                 <p class="apresentacao">Olá, eu sou</p>
-                 <h1>Michel Fernando</h1>
-                 <h2>Desenvolvedor de software.</h2>
-                 <p class="descricao">
-                     Estou iniciando na programação.
-                 </p>
-                 <div class="botoes">
-                     <a href="#projetos" class="botao">Ver projetos</a>
-                     <a href="#contato" class="botao botao-secundario">Entrar em contato</a>
-                 </div>
-             </div>
-         </section>
+        <!-- SOBRE -->
 
-         <!-- SOBRE -->
+        <section id="sobre" class="sobre">
 
-         <section id="sobre" class="sobre">
+            <div class="titulo-secao">
+                <p>Conheça um pouco</p>
+                <h2>Sobre mim !</h2>
+            </div>
 
-             <div class="titulo-secao">
-                 <p>Conheça um pouco</p>
-                 <h2>Sobre mim !</h2>
-             </div>
+            <div class="sobre-conteudo">
 
-             <div class="sobre-conteudo">
+                <div class="sobre-texto">
+                    <h2>
+                        Estudo Desenvolvimento de Sistemas no SENAI.
+                    </h2>
+                    <p>
+                        Sou estudante de desenvolvimento de software e estou construindo minha base em programação, com foco inicialmente em desenvolvimento web.
 
-                 <div class="sobre-texto">
-                     <h2>
-                         Estudo Desenvolvimento de Sistemas no SENAI.
-                     </h2>
-                     <p>
-                         Sou estudante de desenvolvimento de software e estou construindo minha base em programação, com foco inicialmente em desenvolvimento web.
+                        Atualmente estou estudando HTML e CSS, buscando entender não apenas como criar interfaces, mas também como estruturar aplicações de forma organizada e funcional. Tenho interesse tanto em front-end quanto em back-end e pretendo ampliar meu conhecimento em diferentes tecnologias ao longo da minha formação.
 
-                         Atualmente estou estudando HTML e CSS, buscando entender não apenas como criar interfaces, mas também como estruturar aplicações de forma organizada e funcional. Tenho interesse tanto em front-end quanto em back-end e pretendo ampliar meu conhecimento em diferentes tecnologias ao longo da minha formação.
+                        Meu objetivo é transformar o que aprendo em projetos reais, desenvolver cada vez mais minha capacidade de resolver problemas e, futuramente, atuar profissionalmente como desenvolvedor de software.
+                    </p>
+                </div>
 
-                         Meu objetivo é transformar o que aprendo em projetos reais, desenvolver cada vez mais minha capacidade de resolver problemas e, futuramente, atuar profissionalmente como desenvolvedor de software.
-                     </p>
-                 </div>
+                <div class="habilidades">
+                    <div class="habilidade">
+                        <h2>C</h2>
+                        <h4> • Intermediário</h4>
+                        <p>Tenho uma base em C, com conhecimentos de lógica de programação, variáveis, estruturas condicionais e de repetição.</p>
+                    </div>
+                    <div class="habilidade">
+                        <h2>HTML</h2>
+                        <h4> • Iniciante</h4>
+                        <p>Aprendendo a estruturar páginas web com HTML e conhecendo os principais elementos e recursos da linguagem.</p>
+                    </div>
 
-                 <div class="habilidades">
-                     <div class="habilidade">
-                         <h2>C</h2>
-                         <h4> • Intermediário</h4>
-                         <p>Tenho uma base em C, com conhecimentos de lógica de programação, variáveis, estruturas condicionais e de repetição.</p>
-                     </div>
-                     <div class="habilidade">
-                         <h2>HTML</h2>
-                         <h4> • Iniciante</h4>
-                         <p>Aprendendo a estruturar páginas web com HTML e conhecendo os principais elementos e recursos da linguagem.</p>
-                     </div>
+                    <div class="habilidade">
+                        <h2>CSS</h2>
+                        <h4> • Iniciante</h4>
+                        <p>Aprendendo a estilizar páginas, criar layouts e desenvolver interfaces mais organizadas e responsivas.</p>
+                    </div>
 
-                     <div class="habilidade">
-                         <h2>CSS</h2>
-                         <h4> • Iniciante</h4>
-                         <p>Aprendendo a estilizar páginas, criar layouts e desenvolver interfaces mais organizadas e responsivas.</p>
-                     </div>
+                    <div class="habilidade">
+                        <h2>PHP</h2>
+                        <h4> • Em breve</h4>
+                        <p>Próxima etapa dos meus estudos, com foco em desenvolvimento back-end e integração com páginas web.</p>
+                    </div>
 
-                     <div class="habilidade">
-                         <h2>PHP</h2>
-                         <h4> • Em breve</h4>
-                         <p>Próxima etapa dos meus estudos, com foco em desenvolvimento back-end e integração com páginas web.</p>
-                     </div>
+                </div>
 
-                 </div>
+            </div>
 
-             </div>
+        </section>
 
-         </section>
+        <section id="projetos" class="projetos-secao">
 
-         <section id="projetos" class="projetos-secao">
+            <div class="titulo-secao">
+                <p>Alguns trabalhos</p>
+                <h2>Meus projetos</h2>
+            </div>
 
-             <div class="titulo-secao">
-                 <p>Alguns trabalhos</p>
-                 <h2>Meus projetos</h2>
-             </div>
+            <div class="projetos">
 
-             <div class="projetos">
+                <!-- PROJETO 1 -->
 
-                 <!-- PROJETO 1 -->
+                <div class="card">
 
-                 <div class="card">
+                    <div class="numero-projeto">
+                        01
+                    </div>
 
-                     <div class="numero-projeto">
-                         01
-                     </div>
+                    <h3>SISTEMA CADASTRO DE PRODUTOS</h3>
+                    <p>
+                        CADASTRO
+                    </p>
 
-                     <h3>SISTEMA CADASTRO DE PRODUTOS</h3>
-                     <p>
-                         CADASTRO
-                     </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="atividades/cadastro-produtos.php">Ver projetos</a>
+                </div>
 
-                     <div class="tecnologias">
-                         <span>HTML</span>
-                         <span>CSS</span>
-                         <span>PHP</span>
-                     </div>
-                     <a href="atividades/cadastro-produtos.php">Ver projetos</a>
-                 </div>
+                <!-- PROJETO 2-->
 
-                 <!-- PROJETO 2-->
+                <div class="card">
 
-                 <div class="card">
+                    <div class="numero-projeto">
+                        02
+                    </div>
 
-                     <div class="numero-projeto">
-                         02
-                     </div>
+                    <h3>Sistema Verificador de idade POST</h3>
+                    <p>
+                        Verificador de idade
+                    </p>
 
-                     <h3>Sistema Verificador de idade POST</h3>
-                     <p>
-                           Verificador de idade
-                     </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="atividades/idade-post.php">Ver projetos</a>
+                </div>
 
-                     <div class="tecnologias">
-                         <span>HTML</span>
-                         <span>CSS</span>
-                         <span>PHP</span>
-                     </div>
-                     <a href="atividades/idade-post.php">Ver projetos</a>
-                 </div>
+                <!-- PROJETO 3 -->
 
-                 <!-- PROJETO 3 -->
+                <div class="card">
 
-                 <div class="card">
+                    <div class="numero-projeto">
+                        03
+                    </div>
 
-                     <div class="numero-projeto">
-                         03
-                     </div>
+                    <h3>REGISTRO DE NOTAS</h3>
+                    <p>
+                        REGISTRO DE NOTAS
+                    </p>
 
-                     <h3>REGISTRO DE NOTAS</h3>
-                     <p>
-                         REGISTRO DE NOTAS
-                     </p>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="dados-json.php">Ver projetos</a>
+                </div>
 
-                     <div class="tecnologias">
-                         <span>HTML</span>
-                         <span>CSS</span>
-                         <span>PHP</span>
-                     </div>
-                     <a href="dados-json.php">Ver projetos</a>
-                 </div>
+                <div class="card">
+                    <div class="numero-projeto">
 
-             </div>
+                    </div>
+                    <h3>HELPDESK</h3>
+                    <P>
+                        CHAMADOS TI
+                    </P>
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="helpdesk.php">Ver projetos</a>
+                </div>
 
-         </section>
+            </div>
 
-         <section id="contato" class="contato">
-             <div class="titulo-secao">
-                 <p>Vamos conversar?</p>
-                 <h2>Contato</h2>
-             </div>
-             <div class="contato-links">
-                 <a href="mailto:bust22b@gmail.com">Email</a>
-                 <a href="https://github.com/Michel-F-Coder">Github</a>
-             </div>
-         </section>
-         <footer class="footer">
-             <p>
-                 Desenvolvido por <a href="https://michel755.devlook.xyz">Michel Fernando</a>
-             </p>
-             <p>
-                 HTML + CSS
-             </p>
-         </footer>
-     </main>
- </body>
+        </section>
 
- </html>
+        <section id="contato" class="contato">
+            <div class="titulo-secao">
+                <p>Vamos conversar?</p>
+                <h2>Contato</h2>
+            </div>
+            <div class="contato-links">
+                <a href="mailto:bust22b@gmail.com">Email</a>
+                <a href="https://github.com/Michel-F-Coder">Github</a>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>
+                Desenvolvido por <a href="https://michel755.devlook.xyz">Michel Fernando</a>
+            </p>
+            <p>
+                HTML + CSS
+            </p>
+        </footer>
+    </main>
+</body>
+
+</html>
