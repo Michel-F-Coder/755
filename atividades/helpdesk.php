@@ -19,13 +19,14 @@
         <input type="text" class="input_setor" name="setor">
         <br><br>
         <label class="label_problema">PROBLEMA:</label>
+        <br>
         <textarea name="problema" rows="5" cols="30" required></textarea>
         <br><br>
         <label class="label_prioridade">PRIORIDADE:</label>
         <select name="prioridade" id="prioridade">
-        <option value="baixa">BAIXA</option>
-        <option value="media">MEDIA</option>
-        <option value="alta">ALTA</option>
+            <option value="baixa">BAIXA</option>
+            <option value="media">MEDIA</option>
+            <option value="alta">ALTA</option>
         </select>
         <br><br>
         <button type="submit">ENVIAR</button>
