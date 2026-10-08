@@ -12,7 +12,7 @@
 
     <h1>CHAMADOS TI</h1>
     <br>
-    <form method="post">
+    <form method="POST">
         <label class="label_solicitante">SOLICITANTE:</label>
         <input type="text" class="input_solicitante" name="solicitante">
         <br>
