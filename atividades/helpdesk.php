@@ -19,7 +19,7 @@
         <input type="text" class="input_setor" name="setor">
         <br><br>
         <label class="label_problema">PROBLEMA:</label>
-        <input type="text" class="input_problema" name="problema">
+        <input type="textarea" class="input_problema" name="problema">
         <br><br>
         <label class="label_prioridade">PRIORIDADE:</label>
         <select name="prioridade" id="prioridade">
