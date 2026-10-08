@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,16 +14,19 @@
     <form method="POST">
         <label class="label_solicitante">SOLICITANTE:</label>
         <input type="text" class="input_solicitante" name="solicitante">
-        <br>
+        <br><br>
         <label class="label_setor">SETOR:</label>
         <input type="text" class="input_setor" name="setor">
-        <br>
+        <br><br>
         <label class="label_problema">PROBLEMA:</label>
         <input type="text" class="input_problema" name="problema">
-        <br>
+        <br><br>
         <label class="label_prioridade">PRIORIDADE:</label>
-        <input type="text" class="input_prioridade" name="prioridade">
-        <br>
+        <select name="prioridade" id="prioridade"></select>
+        <option value="baixa">BAIXA</option>
+        <option value="media">MEDIA</option>
+        <option value="alta">ALTA</option>
+        <br><br>
         <button type="submit">ENVIAR</button>
     </form>
 
