@@ -1,8 +1,4 @@
-<?php
 
-require_once "helpdesk-func.php";
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 
