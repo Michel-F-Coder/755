@@ -25,5 +25,12 @@ PHP:
 file_put_contents -> CREATE
 file_get_contents -> READ
 
+========== SE DER ABORTING NA HORA DO GIT PULL ==========
+
+cd.. 
+rm -rf www
+git clone ( LINK REPOSITORIO ) www
+cd www
+
 
 
