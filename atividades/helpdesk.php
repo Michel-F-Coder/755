@@ -1,5 +1,35 @@
+<?php
+
+require_once "helpdesk-func.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $solicitante = $_POST["solicitante"];
+    $setor = $_POST["setor"];
+    $problema = $_POST["problema"];
+    $prioridade = $_POST["prioridade"];
+
+    $novochamado = [
+        "solicitante" => $solicitante,
+        "setor" => $setor,
+        "problema" => $problema,
+        "prioridade" => $prioridade
+    ];
+
+    $arquivo = file_get_contents(__DIR__ . "/dados/chamados.json");
+
+    
+
+
+}
+
+
+
+
+
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -31,10 +61,6 @@
         <br><br>
         <button type="submit">ENVIAR</button>
     </form>
-
-
-
-
 
 </body>
 
