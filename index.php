@@ -148,6 +148,27 @@
                     </div>
                     <a href="atividades/idade-post.php">Ver projetos</a>
                 </div>
+                    <!-- banco de dados 2-->
+
+                <div class="card">
+
+                    <div class="numero-projeto">
+                        04
+                    </div>
+
+                    <h3>TESTE BANCO DE DADOS</h3>
+                    <p>
+                        BANCO DE DADOS
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="atividades/db1.php">Ver projetos</a>
+                </div>
+
 
                 <!-- PROJETO 3 -->
 
