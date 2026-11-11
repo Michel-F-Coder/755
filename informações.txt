@@ -31,6 +31,7 @@ cd..
 rm -rf www
 git clone ( LINK REPOSITORIO ) www
 cd www
+deploy.sh php
 
 
 
