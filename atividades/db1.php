@@ -24,11 +24,7 @@
 
         $stmt = $pdo->prepare($sql);
 
-        $stmt-> execute([
-            "nome" => $nome,
-            "preco" => $preco,
-            "quantidade" => $quantidade
-        ]);
+        $stmt->execute();
     }
 
 
@@ -45,12 +41,7 @@
 
             $stmt = $pdo->prepare($sql);
 
-            $stmt-> execute([
-                "nome" => $nome,
-                "preco" => $preco,
-                "quantidade" => $quantidade,
-                "id" => $id
-            ]);
+            $stmt->execute();
 
         }
 
@@ -62,9 +53,7 @@
                 $sql = "DELETE FROM produtos WHERE id = $id";
 
                 $stmt = $pdo->prepare($sql);
-                $stmt->execute([
-                    "id" => $id
-                ]);
+                $stmt->execute();
         }
 
         $produtoEditar = null;
@@ -73,7 +62,7 @@
             $id = $_GET["editar"];
             $sql = "SELECT * FROM produtos WHERE id = $id";
             $stmt = $pdo->prepare($sql);
-            $stmt->execute(["id" => $id]);
+            $stmt->execute();
             $produtoEditar = $stmt->fetch(PDO::FETCH_ASSOC);
         }
 
