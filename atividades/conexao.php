@@ -4,7 +4,7 @@
 // host = '194.61.238.119' roda na VPS
 
 $host = 'localhost';
-$db = 'michel755';
+$db = 'michel755_db1';
 $user = 'michel755';
 $pass = '755!@#';
 
