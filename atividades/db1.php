@@ -130,9 +130,9 @@
                     <td>R$ <?= number_format($produto["preco"], 2, ",", ".") ?></td>
                     <td><?= $produto["quantidade"] ?></td>
                     <td>
-                        <a href="index.php?editar=<?=  $produto['id'] ?>">Editar</a>
+                        <a href="db1.php?editar=<?=  $produto['id'] ?>">Editar</a>
 
-                        <form method="POST" action="index.php" style="display:inline;">
+                        <form method="POST" action="db1.php" style="display:inline;">
                             <input type="hidden" name="id" value="<?= $produto['id'] ?>">
                             <button type="submit" name="excluir" onclick="return confirm
                             ('Deseja excluir esse produto?')">Excluir</button>
