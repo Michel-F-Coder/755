@@ -148,7 +148,7 @@
                     </div>
                     <a href="atividades/idade-post.php">Ver projetos</a>
                 </div>
-                    <!-- banco de dados 2-->
+                <!-- banco de dados 2-->
 
                 <div class="card">
 
@@ -205,6 +205,27 @@
                         <span>PHP</span>
                     </div>
                     <a href="atividades/helpdesk.php">Ver projetos</a>
+                </div>
+
+                <!-- PROJETO 1 -->
+
+                <div class="card">
+
+                    <div class="numero-projeto">
+                        
+                    </div>
+
+                    <h3> LOJA INFORMATICA</h3>
+                    <p>
+                        GERENCIAMENTO 
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>PHP</span>
+                    </div>
+                    <a href="atividades/loja_informatica.php">Ver projetos</a>
                 </div>
 
             </div>
